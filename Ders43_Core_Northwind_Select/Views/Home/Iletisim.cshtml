@@ -1,0 +1,63 @@
+﻿@model List<Product>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Iletisim</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+</head>
+<body>
+
+    <table border="1" class="table table-hover table-dark">
+        
+       <tr>
+
+           <th>ID</th>
+            <th>ÜRÜN ADI</th>
+            <th>FİYAT</th>
+       </tr>
+
+       @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>@item.ProductID</td>
+                <td>@item.ProductName</td>
+                <td>@item.UnitPrice</td>
+
+            </tr>
+
+        }
+
+      @* <tr>
+
+          <td>1</td>
+          <td>ürün1</td>
+            <td>1000</td>
+
+       </tr>
+
+       <tr>
+*@
+          @*  <td>2</td>
+            <td>ürün2</td>
+            <td>2000</td>
+       </tr>
+
+       <tr>
+
+            <td>3</td>
+            <td>ürün3</td>
+            <td>3000</td>
+       </tr>
+
+    </table>*@
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<ul>
+@foreach (var item in Model)
+{
+        <li> <b>@item.ProductName</b></li>
+
+}
+</ul>
+
+<a href="/Home/Iletisim">İLETİŞİM </a>
+
+    <hr />
+<ul>
+
+    <li>İzmir</li>
+    <li>Denizli</li>
+    <li>Aydın</li>
+    <li>Muğla</li>
+</ul>
+

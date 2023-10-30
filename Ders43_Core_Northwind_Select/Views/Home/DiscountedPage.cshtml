@@ -1,0 +1,103 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Burada web sayfasının tanımı,asassddd" />
+    <meta name="keywords"content="" />
+    <meta name="author"content="özgür doğru" />
+    <title>Adidas</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+</head>
+<body>
+    aaaaaaaa
+    sitemap.xml
+    <table border="1">
+
+     <tr>
+         <th>Rumuz</th>
+         <th colspan="2">Email</th>
+         
+     </tr>
+         <td>GunesDenizKum</td>
+         <td>ozgurr_dogru@hotmail.com</td>
+         <td>ozgur83@gmail.com</td>
+ 
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <table border="1">
+
+        <tr>
+
+       <th>Rumuz</th>
+        <td>GunesDenizKum2</td>
+        </tr>
+
+        <tr>
+
+            <th rowspan="2">Emailiniz</th>
+            <td>ozgur1@hotmail.com</td>
+            
+        </tr>
+        <tr>
+
+            <td>ozgur2@gmail.com</td>
+
+        </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+@*    -xml
+    <gondereniban>22326588</gondereniban>
+    <aliciiban>332659988</aliciiban>
+    <meblag>20000</meblag>
+    <tarih>2023-07-12</tarih>
+
+    </br>
+    -json
+    gondereniban:22326588,
+    aliciiban:332659988,
+    meblag:20000,
+    Tarih:2023-07-12
+*@
+
+    
+
+    <form action="/Home/DiscountedPage"method="post">
+
+    <fieldset>
+        <legend>Üyelik Bilgileri</legend>
+        <label>info: webform-.Net Framework-Core</label> <br />
+            <label>ÜrünAdı <span style="background-color:red;color:white;">*</span>:</label>
+        <input type="text"name="ProductName"maxlenght="20"placeholder="isminizi buraya giriniz"required />
+        <br />
+
+        <label>Fiyat</label>
+        <input type="password"name="UnitPrice"maxlength="20" />
+
+        <br />
+
+        <label>Email</label>
+        <input type="email"name="Email"value="Emailinizi buraya yazınız" />
+        <br />
+        <input type="submit"value="KAYDET"class="btn btn-danger" />
+    </fieldset>
+
+    </form>
+</body>
+</html>
